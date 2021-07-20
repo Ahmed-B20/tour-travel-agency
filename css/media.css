@@ -1,0 +1,68 @@
+/* large screen start */
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+/* large screen end */
+
+/* medium screen start */
+@media (max-width: 991px) {
+  header {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
+/* medium screen end */
+
+/* small screen start */
+@media (max-width: 768px) {
+  #menu-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #333;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+    padding: 1rem 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  header .navbar a {
+    display: block;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    background: #222;
+  }
+}
+/* small screen end */
+
+/* very small screen start */
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .heading span {
+    font-size: 2.5rem;
+  }
+
+  .contact .row form .input-box input {
+    width: 100%;
+  }
+}
+/* very small screen end */
